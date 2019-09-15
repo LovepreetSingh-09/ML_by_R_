@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568477701284.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "504436127",
+    "id" : "3E70D84A",
+    "lastKnownWriteTime" : 1568570690,
+    "last_content_update" : 1568570690,
+    "path" : "~/R/ML_by_R/Data_Structures.R",
+    "project_path" : "Data_Structures.R",
+    "properties" : {
+        "cursorPosition" : "2,31",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
