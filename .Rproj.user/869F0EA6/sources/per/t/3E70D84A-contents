@@ -59,7 +59,7 @@ summary(usedcars[c('price','color')])
 mean(c(15000,20000,27000))
 range(usedcars$price)
 diff(range(usedcars$price))
-IQR(usedcars$price) # Interquartile Range = diff b/w Q1 and Q1
+IQR(usedcars$price) # Interquartile Range = diff b/w Q3 and Q1
 quantile((usedcars$price))
 quantile(usedcars$price,probs=c(0.01,0.99)) # 1st percentile and 99th percentile
 quantile(usedcars$price,seq(from=0,to=1,by=0.20))
