@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569583165000.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1393393721",
+    "id" : "D441CE43",
+    "lastKnownWriteTime" : 1569583633,
+    "last_content_update" : 1569583633057,
+    "path" : "~/R/ML_by_R/Regression.R",
+    "project_path" : "Regression.R",
+    "properties" : {
+        "cursorPosition" : "3,10",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

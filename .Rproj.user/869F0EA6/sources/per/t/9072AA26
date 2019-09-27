@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569602489030.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2602568321",
+    "id" : "9072AA26",
+    "lastKnownWriteTime" : 1569605165,
+    "last_content_update" : 1569605165684,
+    "path" : "~/R/ML_by_R/White_Wine_Regression.R",
+    "project_path" : "White_Wine_Regression.R",
+    "properties" : {
+        "cursorPosition" : "47,14",
+        "scrollLine" : "36",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 10,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
