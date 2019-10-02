@@ -1,3 +1,8 @@
+library(gmodels)
+library(caret)
+library(vcd)
+library(irr)
+library(ROCR)
 # stringsAsFactors=FALSE let the strings data columns as character type
 # While stringsAsFactors=TRUE makes the strings data columns as Factor type
 # Default value of stringsSFactors=TRUE
@@ -65,3 +70,32 @@ table(conservative) # Gives values of True and False and their count
 
 # checking the relation between the model and the color
 CrossTable(x=usedcars$model,y=conservative)
+
+# kappa statistic :-
+# It adjusts accuracy by accounting for the possibility of a correct prediction by chance alone.
+# It is (pr(a)-pr(e))/1-pr(e)
+pr_a=0.865+0.109 # True Positive and True Negative proportions
+pr_e=0.869*0.888 + 0.132*0.112 # (TP+FP)*(TP+FN) + (TN+FN)*(TN*FP)
+kap=(pr_a-pr_e)/(1-pr_e)
+kap # >0.8 means very good agreement
+
+# Here we need to pass the actual and predicted vectors
+# Kappa funvtion in vcd package
+help(Kappa)
+
+# Kappa2 in irr package
+help(kappa2)
+
+# The bottom functions are in caret package
+# Sensitivity is TPR or Recall
+help("sensitivity")
+# Specificity is TNR
+help("specificity")
+# Precision is Positive Predicted value (PosPredValue)
+help("posPredValue")
+
+# The following functions are used to create ROC curve
+help("prediction")
+help('performance')
+# For marking a line on the already plotted graph
+abline(a=0,b=0.11,lwd=2)

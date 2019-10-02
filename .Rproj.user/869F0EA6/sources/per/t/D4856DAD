@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1569084604299.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "933006117",
+    "id" : "D4856DAD",
+    "lastKnownWriteTime" : 1570040246,
+    "last_content_update" : 1570040246241,
+    "path" : "~/R/ML_by_R/Loan_model.R",
+    "project_path" : "Loan_model.R",
+    "properties" : {
+        "cursorPosition" : "107,0",
+        "scrollLine" : "89",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
