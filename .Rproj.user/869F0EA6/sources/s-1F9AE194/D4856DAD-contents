@@ -25,6 +25,7 @@ credit_test=credit[-sd,-17]
 str(credit_test)
 credit_test_labels=factor(sapply(credit[-sd,17],crop))
 table(credit_test_labels)
+credit$default=factor(sapply((credit$default),crop))
 
 
 # trails are the number of trees to be made for boosting. 1 by default.
@@ -105,3 +106,23 @@ str(cv_results)
 
 # use unlist function to unlist
 mean(unlist(cv_results))
+
+modelLookup('C5.0')
+?expand.grid
+
+m <- train(default ~ ., data = credit, method = "C5.0")
+p <- predict(m, credit)
+table(p, credit$default)
+m
+# Probabilityy of yes or no
+head(predict(m,credit,'prob'))
+
+# The trainControl() function is used to create a set of configuration options known
+# as a control object, which guides the train() function.
+ctrl=trainControl(method='cv',selectionFunction = 'oneSE',number = 10)
+grid=expand.grid(.model='tree',.trials=c(1,5,15,15,30,35),.winnow='FALSE')
+grid
+
+set.seed(300)
+m=train(default~.,data=credit,method='C5.0',metric='Kappa',trControl=ctrl,tuneGrid=grid)
+m

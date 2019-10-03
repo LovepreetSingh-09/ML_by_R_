@@ -1,0 +1,38 @@
+library(C50)
+library(caret)
+library(gmodels)
+library(irr)
+credit=read.csv('credit.txt')
+str(credit)
+
+# Entropy curve
+# Default values of from and to are also 0 and 1
+curve(-x * log2(x) - (1 - x) * log2(1 - x),from=0,to=1,col = "red", xlab = "x", ylab = "Entropy",lwd=5)
+
+# Generating Random Numbers
+set.seed(1)
+sd=sample(1000,900)
+
+crop=function(x){x=ifelse(x>1,'Yes','No')}
+
+# spliting data for training and testing
+credit_train=credit[sd,-17]
+credit_train_labels=factor(sapply((credit$default[sd]),crop))
+str(credit_train)
+str(credit_train_labels)
+table(credit_train_labels)
+credit_test=credit[-sd,-17]
+str(credit_test)
+credit_test_labels=factor(sapply(credit[-sd,17],crop))
+table(credit_test_labels)
+
+
+# trails are the number of trees to be made for boosting. 1 by default.
+# Costs is a matrix associated with the different types of errors. NULL by default.
+model=C5.0(credit_train,credit_train_labels,trials=1,costs=NULL)
+# model gives the depth or size, samples and features used
+# Summary shows the rules by which tree is made of and the error rate.
+model
+summary(model)
+
+

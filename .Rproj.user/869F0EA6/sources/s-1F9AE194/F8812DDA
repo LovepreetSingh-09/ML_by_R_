@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3187230399",
+    "hash" : "0",
     "id" : "F8812DDA",
     "lastKnownWriteTime" : 1569693359,
     "last_content_update" : 1569693359722,
     "path" : "~/R/ML_by_R/Concrete_Strength.R",
     "project_path" : "Concrete_Strength.R",
     "properties" : {
-        "cursorPosition" : "46,0",
-        "scrollLine" : "0",
+        "cursorPosition" : "16,0",
+        "scrollLine" : "1",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
