@@ -66,7 +66,7 @@ grid=expand.grid(.mtry=c(2,4,8,16))
 # using train of caret
 m_rf=train(default~.,credit,method='rf',tuneGrig=grid,trcontrol=ctrl,metric='Kappa')
 
-# comparing with simple decision tree f C5.0
+# comparing with simple decision tree f C5.0 with 10 folds for 10 repetitions
 grid_c50 <- expand.grid(.model = "tree",.trials = c(10, 20, 30, 40),.winnow = "FALSE")
 m_c50 <- train(default ~ ., data = credit, method = "C5.0", metric = "Kappa", trControl = ctrl, tuneGrid = grid_c50)
 
