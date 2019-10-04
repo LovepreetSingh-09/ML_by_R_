@@ -7,13 +7,13 @@
     "folds" : "",
     "hash" : "2602568321",
     "id" : "9072AA26",
-    "lastKnownWriteTime" : 1569605165,
-    "last_content_update" : 1569605165684,
+    "lastKnownWriteTime" : 1570187329,
+    "last_content_update" : 1570187329343,
     "path" : "~/R/ML_by_R/White_Wine_Regression.R",
     "project_path" : "White_Wine_Regression.R",
     "properties" : {
-        "cursorPosition" : "47,14",
-        "scrollLine" : "0",
+        "cursorPosition" : "52,13",
+        "scrollLine" : "35",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
