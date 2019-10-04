@@ -47,3 +47,4 @@ summary(groc)
 gr=as(gro,'data.frame')
 # The rules column in data frame is converted into factors 
 str(gr)
+
