@@ -73,5 +73,3 @@ m_c50 <- train(default ~ ., data = credit, method = "C5.0", metric = "Kappa", tr
 m_rf
 m_c50
 
-
-
