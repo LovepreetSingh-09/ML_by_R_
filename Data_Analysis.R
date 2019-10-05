@@ -14,6 +14,7 @@ summary(usedcars)
 summary(usedcars[c('price','color')])
 usedcars[1:2][4,]
 usedcars[1,][,c(3,5)]
+
 x=function(x){5*x}
 # lapply() applies only a function to some given data and returns a list
 b=lapply(usedcars[1,],x)
