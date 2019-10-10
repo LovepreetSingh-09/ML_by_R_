@@ -1,5 +1,9 @@
 library(neuralnet)
 data=read.csv('concrete.txt')
+str(data)
+# Replacing NA values by 0
+data[is.na(data)]=0
+summary(data)
 
 # Exclude missing values
 data=na.omit(data)
@@ -24,7 +28,7 @@ test=concrete[-sp,]
 str(test)
 
 # by default, hidden =1 indicates 1 hidden node
-model=neuralnet(strength~.,train,hidden=1)
+model=neuralnet(strength~.,train,hidden=c(2))
 model # Shows each weight and intercept/bias
 # from plotting we see that SSE is 4.011 while steps(iterations) are 851
 plot(model)
