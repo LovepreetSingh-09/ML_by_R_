@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2602568321",
+    "hash" : "1445710229",
     "id" : "9072AA26",
-    "lastKnownWriteTime" : 1570187329,
-    "last_content_update" : 1570187329343,
+    "lastKnownWriteTime" : 1570698906,
+    "last_content_update" : 1570698906860,
     "path" : "~/R/ML_by_R/White_Wine_Regression.R",
     "project_path" : "White_Wine_Regression.R",
     "properties" : {
-        "cursorPosition" : "52,13",
+        "cursorPosition" : "53,0",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

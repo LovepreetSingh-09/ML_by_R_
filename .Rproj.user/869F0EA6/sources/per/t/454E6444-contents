@@ -25,7 +25,6 @@ reg=function(x,y){
 reg(x=challanger$temperature,y=challanger$distress_ct)
 reg(y = challanger$distress_ct, x = challanger[2:4])
 
-
 # Predicting Medical Expenses
 str(insurance)
 summary(insurance$charges)

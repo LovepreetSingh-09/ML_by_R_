@@ -2,6 +2,8 @@ library(C50)
 library(caret)
 library(gmodels)
 library(irr)
+library(rpart)
+library(rpart.plot)
 credit=read.csv('credit.txt')
 str(credit)
 
@@ -21,12 +23,12 @@ credit_train_labels=factor(sapply((credit$default[sd]),crop))
 str(credit_train)
 str(credit_train_labels)
 table(credit_train_labels)
+
 credit_test=credit[-sd,-17]
 str(credit_test)
 credit_test_labels=factor(sapply(credit[-sd,17],crop))
 table(credit_test_labels)
 credit$default=factor(sapply((credit$default),crop))
-
 
 # trails are the number of trees to be made for boosting. 1 by default.
 # Costs is a matrix associated with the different types of errors. NULL by default.
@@ -35,7 +37,7 @@ model=C5.0(credit_train,credit_train_labels,trials=1,costs=NULL)
 # Summary shows the rules by which tree is made of and the error rate.
 model
 summary(model)
-
+rpart.plot(model)
 # Evaluating the model
 pred=predict(model,credit_test)
 CrossTable(credit_test_labels,pred,prop.chissq=F,prop.t=FALSE,dnn=c('Actual','Prediction'))

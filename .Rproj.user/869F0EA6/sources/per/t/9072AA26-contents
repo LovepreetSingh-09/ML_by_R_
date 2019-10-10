@@ -22,6 +22,7 @@ w_test=data[3750:length(data$quality),]
 
 model=rpart(quality~.,w_train)
 model
+
 # The nodes having * can be used for predictions
 summary(model)
 

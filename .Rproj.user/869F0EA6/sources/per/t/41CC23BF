@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2604150601",
+    "hash" : "227022582",
     "id" : "41CC23BF",
-    "lastKnownWriteTime" : 1569577263,
-    "last_content_update" : 1569577263648,
+    "lastKnownWriteTime" : 1570698241,
+    "last_content_update" : 1570698241447,
     "path" : "~/R/ML_by_R/Salary_Linear_Regression.R",
     "project_path" : "Salary_Linear_Regression.R",
     "properties" : {
-        "cursorPosition" : "33,0",
+        "cursorPosition" : "32,0",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },

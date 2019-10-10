@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570695820821.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BCB7EBEC",
+    "lastKnownWriteTime" : 2583574506656,
+    "last_content_update" : 1570695820821,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "5B11545D",
+        "caption" : "credit_train",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=credit_train&cache_key=5B11545D",
+        "displayedObservations" : 900,
+        "environment" : "",
+        "expression" : "credit_train",
+        "object" : "credit_train",
+        "preview" : 0,
+        "totalObservations" : 900,
+        "variables" : 20
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 17,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
