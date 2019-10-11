@@ -17,9 +17,13 @@ v=pred==test$letter
 table=table(v)
 table
 prop.table(table)
+# Confusion Matrix
+table(pred,test$letter)
 # Here we can see that we have 83.9 % accuracy
 
 # improving model by rbf kernel
+?ksvm
+# C = regularization term
 model=ksvm(letter~.,train,kernel='rbfdot',C=1)
 pred=predict(model,test)
 arg=pred==test$letter
