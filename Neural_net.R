@@ -8,12 +8,14 @@ data=Boston
 hist(data$medv,col='sky blue')
 head(data)
 
+# Margin=2
 maxvalue=apply(data,2,max)
 maxvalue
 minvalue=apply(data,2,min)
 minvalue
 dataf=as.data.frame(scale(data,center=minvalue,scale=maxvalue-minvalue))
 summary(dataf)
+
 # It is sameas normalization
 norm=function(x){ ((x-min(x))/(max(x)-min(x)))}
 dt=as.data.frame(lapply(data,norm))
