@@ -29,8 +29,6 @@ ggplot()+geom_point(aes(x=train_dataset$YearsExperience,y=train_dataset$Salary),
 ggplot()+geom_point(aes(x=test_data$YearsExperience,y=test_data$Salary),color='red')+
   geom_line(aes(x=train_dataset$YearsExperience,y=predict(model,newdata=train_dataset)),color='blue')+
   ggtitle('Salary as Experience')+
-  xlab('Years')+
-  ylab('Salary')
-
+  labs(x='Years',y='salary')
 
 
