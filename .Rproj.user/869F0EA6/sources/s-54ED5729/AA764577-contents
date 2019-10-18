@@ -1,0 +1,47 @@
+library(psych)
+library(ggplot2)
+data=read.csv('challanger.txt')
+str(data)
+
+m=cov(data$temperature,data$distress_ct)/var(data$temperature)
+m
+b=mean(data$distress_ct)-m*(mean(data$temperature))
+b
+cor(data$temperature,data$distress_ct)
+
+reg=function(x,y){
+  a=as.matrix(x)
+  a=cbind(Intercept=1,a)
+  w=solve(t(a)%*%a)%*%t(a)%*%y
+  colnames(w)<-'estimate'
+  print(w)
+}
+reg(x=data$temperature,y=data$distress_ct)
+
+pairs(data[c('temperature','pressure','distress_ct')])
+cor(data$temperature,data$distress_ct)
+cor(data$pressure,data$distress_ct)
+
+set.seed(123)
+n=nrow(data)
+n
+sd=sample(n,as.integer(n*0.70))
+sd
+
+dtm=data
+train_dtm=dtm[sd,]
+test_dtm=dtm[-sd,]
+str(train_dtm)
+
+model=lm(distress_ct~temperature,train_dtm)
+model
+
+pred=predict(model,test_dtm)
+summary(pred)
+
+pred2=predict(model,train_dtm)
+pred2
+ggplot()+geom_point(aes(x=train_dtm$temperature,y=train_dtm$distress_ct),color='red')+
+  geom_line(aes(x=train_dtm$temperature,y=pred2),color='blue')+
+  labs(x='distress',y='temperature')+ggtitle('Challanger')
+  

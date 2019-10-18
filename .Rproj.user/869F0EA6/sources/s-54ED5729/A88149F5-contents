@@ -1,0 +1,17 @@
+library(neuralnet)
+data=read.csv('white_wines.txt')
+str(data)
+summary(data)
+hist(data$quality,col='sky blue')
+
+norm=function(x){ (x-min(x))/(max(x)-min(x))}
+
+data=as.data.frame(lapply(data, norm))
+summary(data)
+w_train=data[1:3750,]
+w_test=data[3750:length(data$quality),]
+
+model=neuralnet(quality~.,w_train,hidden=c(2))
+plot(model)
+pred=compute(model,w_test)
+pred$net.result

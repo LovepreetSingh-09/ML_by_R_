@@ -15,7 +15,7 @@ teens$age=ifelse(teens$age>13 & teens$age<20,teens$age,NA)
 summary(teens$age)
 
 # We can use dummy coding on gender
-# We won't creatw variable for M becoz 0 to Female and no_gender means M
+# We won't create variable for M becoz 0 to Female and no_gender means M
 # We need to apply !(is.na(teens$gender)) becoz otherwise NA values will appear in female variables also 
 teens$female=ifelse(teens$gender=='F' & (!is.na(teens$gender)),1,0)
 teens$no_gender=ifelse(is.na(teens$gender),1,0)
@@ -32,9 +32,10 @@ mean(teens$age,na.rm=TRUE)
 aggregate(age~gradyear,teens,mean,na.rm=TRUE)
 
 # We can use ave() to store the information into our dataset
-# It give the vector of the output 
+# It gives the vector of the output 
 # It has 30000 values which are mean of their respective gradyear
 ave_age=ave(teens$age,teens$gradyear,FUN=function(x) mean(x,na.rm=TRUE))
+? ave()
 ave_age[29995:30000]
 summary(ave_age)
 teens$age=ifelse(is.na(teens$age),ave_age,teens$age)
@@ -59,7 +60,8 @@ model$cluster
 # Add cluster label column in the original data set
 teens$cluster=model$cluster
 # Info of a person with its assigned cluster label
-teens[1:10,c('gradyear','age','gender','friends','cluster')]
+(teens[1:10,c('gradyear','age','gender','friends','cluster')])
+teens$cluster=factor(teens$cluster)
 
 # Average age based on each cluster
 aggregate(age~cluster,teens,mean)
@@ -69,3 +71,6 @@ aggregate(female~cluster,teens,mean)
 
 # Average no. of friends based on each cluster
 aggregate(friends~cluster,teens,mean)
+levels(teens$cluster) <- c('one',"two", "three",'four','five')
+levels(teens$cluster)
+teens$cluster

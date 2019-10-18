@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571397460806.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "369184906",
+    "id" : "CE614E6F",
+    "lastKnownWriteTime" : 1570708987,
+    "last_content_update" : 1570708987,
+    "path" : "~/R/CA2Q1.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "19,36",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 19,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

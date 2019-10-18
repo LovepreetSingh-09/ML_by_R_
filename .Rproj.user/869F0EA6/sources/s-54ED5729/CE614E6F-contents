@@ -1,0 +1,26 @@
+library(rpart)
+library(rpart.plot)
+data=read.table('credit.txt',sep=',',header=TRUE)
+str(data)
+
+set.seed(123)
+n=nrow(data)
+sd=sample(n,as.integer(n*0.7))
+sd
+
+func=function(x){
+  ifelse(x>1,'Yes','No')
+}
+data$default=factor(sapply(data$default,func))
+str(data)
+train_data=data[sd,]
+str(train_data)
+test_data=data[-sd,]
+str(test_data)
+prop.table(table(test_data$default))
+
+model=rpart(default~.,train_data)
+summary(model)
+rpart.plot(model,type=4)
+
+pred=predict(model,test_data)
