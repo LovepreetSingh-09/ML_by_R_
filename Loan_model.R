@@ -50,7 +50,8 @@ CrossTable(credit_test_labels,pred,prop.chissq=F,prop.t=FALSE,dnn=c('Actual','Pr
 model=C5.0(credit_train,credit_train_labels,trials=4)
 model
 summary(model)
-pred=predict(model,credit_test)
+pred=predict(model,credit_test,type='prob')
+pred
 CrossTable(credit_test_labels,pred,prop.chissq=F,prop.t=FALSE,dnn=c('Actual','Prediction'))
 # At trials=4 give us the maximum accuracy with 75%.
 # But still there are many False Negative and False Positive
@@ -116,7 +117,7 @@ m <- train(default ~ ., data = credit, method = "C5.0")
 p <- predict(m, credit)
 table(p, credit$default)
 m
-# Probabilityy of yes or no
+# Probability of yes or no
 head(predict(m,credit,'prob'))
 
 # The trainControl() function is used to create a set of configuration options known
