@@ -1,24 +1,24 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1571397466098.000,
+    "created" : 1571397460806.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2824522999",
-    "id" : "AA764577",
-    "lastKnownWriteTime" : 1571397736,
-    "last_content_update" : 1571397736883,
-    "path" : "~/R/CA2Q2.R",
+    "hash" : "0",
+    "id" : "CE614E6F",
+    "lastKnownWriteTime" : 1570708987,
+    "last_content_update" : 1570708987,
+    "path" : "~/R/CA2Q1.R",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "28,2",
+        "cursorPosition" : "19,36",
         "scrollLine" : "0"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 20,
+    "relative_order" : 19,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

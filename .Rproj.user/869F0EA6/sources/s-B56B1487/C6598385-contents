@@ -81,6 +81,7 @@ nb=naiveBayes(sms_train,sms_train_labels,laplace=0)
 
 # Evaluating Model:-
 pred=predict(nb,sms_test)
+pred
 # Here we have only 31 out of 1390 misclassified so we have the accuracy of about 97.7%
 CrossTable(pred,sms_test_labels,prop.chisq=FALSE,dnn=c('predicted','actual'),prop.t = FALSE)
 

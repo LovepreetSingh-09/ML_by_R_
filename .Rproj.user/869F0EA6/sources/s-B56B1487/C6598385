@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1568990859271.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C6598385",
+    "lastKnownWriteTime" : 1568999787,
+    "last_content_update" : 1572604887200,
+    "path" : "~/R/ML_by_R/Spam_SMS.R",
+    "project_path" : "Spam_SMS.R",
+    "properties" : {
+        "cursorPosition" : "83,4",
+        "scrollLine" : "72",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
