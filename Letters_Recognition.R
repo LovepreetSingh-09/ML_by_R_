@@ -1,3 +1,4 @@
+
 library(kernlab)
 letters <- read.csv("letters_data.txt")
 str(letters)
@@ -11,6 +12,7 @@ model
 
 pred=predict(model,test)
 head(test$letter)
+head(pred)
 
 # For checking confusion matrix
 v=pred==test$letter
