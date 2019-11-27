@@ -12,8 +12,10 @@ prop.table(table(raw$v1))
 
 # VCorpus refers to a volatile corpus—volatile as it is stored in memory as opposed to being stored on disk
 # we use the VectorSource() reader function to create a source object from the existing raw$v2 vector.
+?VCorpus
 corpus=VCorpus(VectorSource(raw$v2))
 print(corpus[1:2])
+inspect(corpus[1:2])
 
 # for displaying text use as.character
 as.character(corpus[[1]])
@@ -42,7 +44,9 @@ sms_dtm=DocumentTermMatrix(clean_corpus)
 str(sms_dtm)
 
 # If we didn't have done the preprocessing then we should prepare data by the following method
-sms_dtm2 <- DocumentTermMatrix(corpus, control = list(tolower = TRUE,removeNumbers = TRUE,stopwords = TRUE,removePunctuation = TRUE,stemming = TRUE))
+sms_dtm2 <- DocumentTermMatrix(corpus, control = list(tolower = TRUE,removeNumbers = TRUE,
+                                                      stopwords = TRUE,removePunctuation = TRUE,
+                                                      stemming = TRUE, stripWhitespace=TRUE))
 str(sms_dtm2)
 sms_dtm[1,]
 sms_dtm2[1,]
