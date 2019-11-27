@@ -2,7 +2,8 @@
 library(arules)
 
 # read.transactions creates a sparse matrix to save memory and computational efficiency
-groceries=read.transactions('groceries.txt',sep=',')
+groceries=read.transactions('groceries_data.txt',sep=',')
+fix(groceries)
 summary(groceries)
 groceries
 

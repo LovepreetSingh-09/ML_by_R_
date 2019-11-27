@@ -1,6 +1,8 @@
 library(rpart)
 library(rpart.plot)
 iris
+str(iris)
+
 s=sample(150,100)
 s
 str(s)

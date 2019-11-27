@@ -1,24 +1,24 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1570694741232.000,
+    "created" : 1571397466098.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2255414167",
-    "id" : "1CD5CF30",
-    "lastKnownWriteTime" : 1570695864,
-    "last_content_update" : 1570695864227,
-    "path" : "~/R/Decison_Tree.R",
+    "hash" : "2824522999",
+    "id" : "AA764577",
+    "lastKnownWriteTime" : 1574276363,
+    "last_content_update" : 1574276363514,
+    "path" : "~/R/CA2Q2.R",
     "project_path" : null,
     "properties" : {
-        "cursorPosition" : "10,0",
-        "scrollLine" : "0"
+        "cursorPosition" : "28,2",
+        "scrollLine" : "11"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 16,
+    "relative_order" : 20,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"
