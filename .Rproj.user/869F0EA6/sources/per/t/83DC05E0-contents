@@ -25,6 +25,7 @@ table(pred,test$letter)
 
 # improving model by rbf kernel
 ?ksvm
+
 # C = regularization term
 model=ksvm(letter~.,train,kernel='rbfdot',C=1)
 pred=predict(model,test)

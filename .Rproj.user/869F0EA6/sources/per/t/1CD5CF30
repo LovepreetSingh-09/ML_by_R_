@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "1836566802",
+    "hash" : "1461734426",
     "id" : "1CD5CF30",
-    "lastKnownWriteTime" : 1574276183,
-    "last_content_update" : 1574276184011,
+    "lastKnownWriteTime" : 1578063718,
+    "last_content_update" : 1578063718293,
     "path" : "~/R/Decison_Tree.R",
     "project_path" : null,
     "properties" : {
         "cursorPosition" : "29,0",
-        "scrollLine" : "10"
+        "scrollLine" : "6"
     },
     "read_only" : false,
     "read_only_alternatives" : [

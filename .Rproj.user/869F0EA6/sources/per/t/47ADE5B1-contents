@@ -14,10 +14,13 @@ table(mushroom$class)
 # like... OneR(class~odor+bruises,mushroom)
 # Mushroom is a dataframe
 model=OneR(class~.,mushroom)
+
 # It tells us the rule and feature it used
 model
+
 # gives the confusion matrix and full details methamatically
 summary(model)
+
 # Here our accuracy is almost 99% with no False Positive(poisonous) means no edible has classified into poisonous
 # but 120 samples are classifed as False Negative(edible) 
 # So we have classified 120 poisonous samples into edible category.
@@ -27,6 +30,7 @@ summary(model)
 # Use JRip() another rule algorithm from RWeka
 model=JRip(class~.,mushroom)
 model
+
 # It has more rules than the previous one
 summary(model)
 # Now we got 100% efficiency on training data with 0 FN and 0 FP
