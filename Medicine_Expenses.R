@@ -1,4 +1,5 @@
 library(psych)
+
 challanger=read.csv('challanger.txt')
 insurance=read.csv('insurance.txt')
 str(insurance)
@@ -22,6 +23,7 @@ reg=function(x,y){
   colnames(w)<-'estimate'
   print(w)
 }
+
 reg(x=challanger$temperature,y=challanger$distress_ct)
 reg(y = challanger$distress_ct, x = challanger[2:4])
 
