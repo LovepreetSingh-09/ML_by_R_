@@ -17,6 +17,7 @@ itemFrequencyPlot(groceries,topN=10)
 
 # visualize sparse matrix
 image(groceries[1:5])
+
 # sparse matrix of 100 random purchases
 image(sample(groceries,100))
 
