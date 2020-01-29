@@ -15,3 +15,4 @@ bake=apriori(bakery,parameter=list(support=0.001,confidence=0.005,minlen=2))
 bake
 summary(bake)
 inspect(bake)      
+
